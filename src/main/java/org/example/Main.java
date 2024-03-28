@@ -15,7 +15,7 @@ public class Main {
     String lastnamebutton = "//*[@id=\"LastName\"]";
     String lastname = "Mustermann";
     String emailbutton = "//*[@id=\"Email\"]";
-    String email = "Max35-@web.de";
+    String email = "Max36-@web.de";
     String passwortfeld = "//*[@id=\"Password\"]";
     String passwort = " Max-1111";
     String confirm = "//*[@id=\"ConfirmPassword\"]";
