@@ -15,7 +15,7 @@ public class Registration {
     String lastnamebutton = "//*[@id=\"LastName\"]";
     String lastname = "Mustermann";
     String emailbutton = "//*[@id=\"Email\"]";
-    String email = "bea22-@web.de";
+    String email = "Adolfs31-@web.de";
     String passwortfeld = "//*[@id=\"Password\"]";
     String passwort = " Max-1111";
     String confirm = "//*[@id=\"ConfirmPassword\"]";

@@ -8,8 +8,9 @@ public class Einkauf {
     static WebDriver driver;
 
     String computerbutton = "//*[@href='/computers'][1]";
-    String notebooksbutton = "//*[@title=\"Show products in category Notebooks\"]";
-    String addtocart = "//*[@value=\"Add to cart\"]";
+    String Accessbutton = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[3]/div/div/a/img";
+    String addtocart = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[3]/div/div[2]/div[3]/div[2]/input";
+    String addtocart2 = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[4]/div/div[2]/div[3]/div[2]/input";
     String shoppingbutton = "//*[@class=\"cart-label\"]";
     String agbbutton = "//*[@id=\"termsofservice\"]";
     String ceckoutbutton ="//*[@id=\"checkout\"]";
@@ -39,9 +40,13 @@ public class Einkauf {
 
 
     public void einkauf() throws InterruptedException {
+        Thread.sleep(500
+        );
 
         driver.findElement(By.xpath(computerbutton)).click();
-        driver.findElement(By.xpath(notebooksbutton)).click();
+        driver.findElement(By.xpath(Accessbutton)).click();
+        driver.findElement(By.xpath(addtocart2));
+        Thread.sleep(500);
         driver.findElement(By.xpath(addtocart)).click();
         driver.findElement(By.xpath(shoppingbutton)).click();
         driver.findElement(By.xpath(agbbutton)).click();

@@ -19,5 +19,8 @@ public class Main {
 
         Einkauf einkaufen = new Einkauf(driver);
         einkaufen.einkauf();
+
+        LogOut logOut = new LogOut(driver);
+        logOut.logoutdemo();
     }
 }
