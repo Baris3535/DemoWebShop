@@ -38,6 +38,10 @@ public class Registration {
         driver.findElement(By.xpath(passwortfeld)).sendKeys(passwort);
         driver.findElement(By.xpath(confirm)).sendKeys(passwort);
         driver.findElement(By.xpath(register)).click();
+
+
+        Screenshot screenshot = new Screenshot(driver);
+        screenshot.takescreenshot();
     }
 
 }
