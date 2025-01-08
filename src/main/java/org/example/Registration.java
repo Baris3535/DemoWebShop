@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.time.Duration;
 
 public class Registration {
@@ -15,7 +16,7 @@ public class Registration {
     String lastnamebutton = "//*[@id=\"LastName\"]";
     String lastname = "Mustermann";
     String emailbutton = "//*[@id=\"Email\"]";
-    String email = "Adolfs31-@web.de";
+    String email = "Adolfs41-@web.de";
     String passwortfeld = "//*[@id=\"Password\"]";
     String passwort = " Max-1111";
     String confirm = "//*[@id=\"ConfirmPassword\"]";
@@ -27,7 +28,7 @@ public class Registration {
 
     }
 
-    public void registrierung() throws InterruptedException {
+    public void registrierung() throws InterruptedException, IOException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         driver.findElement(By.xpath(registerbutton)).click();
